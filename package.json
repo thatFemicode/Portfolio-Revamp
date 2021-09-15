@@ -4,7 +4,15 @@
   "description": "",
   "main": "webpack.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "webpack serve",
+    "sass": "node-sass ./src/sass/main.scss ./src/css/main.css",
+    "watch": "webpack -w",
+    "build": "NODE_ENV=production webpack",
+    "clean": "rm -rf ./dist",
+    "build-dev": "webpack",
+    "start": "concurrently \"npm run sass\" \"npm run build\" \"npm run clean\" \"npm run serve\"",
+    "starte": "concurrently \"npm run sass\" \"npm run watch\" \"npm run clean\"",
+    "starter": "concurrently \"npm run sass\" \"npm run serve\""
   },
   "author": "",
   "license": "ISC",
@@ -16,6 +24,7 @@
     "css-loader": "^6.2.0",
     "cssnano": "^5.0.8",
     "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^5.3.2",
     "jquery.ripples": "^0.6.3",
     "mini-css-extract-plugin": "^2.2.2",
     "node-sass": "^6.0.1",
