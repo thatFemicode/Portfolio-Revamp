@@ -9,9 +9,18 @@ html {
   font-size: 100%;
 }
 body {
-  overflow: hidden;
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
+  position: relative;
+  background-color: map-get($map: $colors, $key: bg);
+  color: map-get($map: $colors, $key: text);
+  height: 100%;
 }
 a {
   text-decoration: none;
   font-size: 0.2rem;
+  color: inherit;
+}
+li {
+  list-style: none;
 }

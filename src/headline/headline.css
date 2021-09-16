@@ -75,18 +75,18 @@ a {
 }
 
 .cd-headline {
-  font-size: 3rem;
+  font-size: 1rem;
   line-height: 1.2;
 }
 @media only screen and (min-width: 768px) {
   .cd-headline {
-    font-size: 4.4rem;
+    font-size: 1rem;
     font-weight: 300;
   }
 }
 @media only screen and (min-width: 1170px) {
   .cd-headline {
-    font-size: 6rem;
+    font-size: 1rem;
   }
 }
 
@@ -591,9 +591,9 @@ a {
   position: absolute;
   left: 0;
   bottom: 0;
-  height: 3px;
+  height: 2px;
   width: 0;
-  background: #0096a7;
+  background: #f5f4fc;
   z-index: 2;
   -webkit-transition: width 0.3s -0.1s;
   -moz-transition: width 0.3s -0.1s;

@@ -1,4 +1,31 @@
 .container {
-  max-width: 1140px;
+  max-width: 90%;
   margin: 0 auto;
+  position: relative;
+  @include breakpoint-up(medium) {
+    max-width: 70%;
+  }
+}
+.inners {
+  padding: 1.9rem 1.2rem;
+  @include breakpoint-up(medium) {
+    padding: 2.4rem 1.5rem;
+  }
+}
+.main {
+  margin-top: -1rem;
+  @include dc(#545454);
+}
+.font-light {
+  color: map-get($map: $colors, $key: bg);
+  font-size: 0.9rem;
+  @include breakpoint-up(large) {
+    font-size: 1.2rem;
+  }
+}
+.fas {
+  font-size: 0.9rem;
+}
+.email {
+  margin-left: -0.34rem;
 }

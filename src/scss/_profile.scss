@@ -1,0 +1,74 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: map-get($map: $colors, $key: text);
+
+  @include breakpoint-up(large) {
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 25% 100%, 0 80%);
+    flex-direction: row;
+    align-items: center;
+  }
+  &-left {
+    &-text {
+      font-size: clamp(1.7rem, 3vw, 2.5rem);
+      margin-bottom: 0.4rem;
+      color: map-get($map: $colors, $key: bg);
+    }
+  }
+  &-right {
+    @include breakpoint-up(larger) {
+      margin-right: 10rem;
+      padding-top: 0;
+    }
+    @media screen and (min-width: 620px) and (max-width: 900px) {
+      align-self: flex-end;
+    }
+    padding-top: 1rem;
+    &-contact {
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+      @include breakpoint-up(medium) {
+        margin-bottom: 0.8rem;
+      }
+      li {
+        color: map-get($map: $colors, $key: bg);
+        font-size: 0.8rem;
+        @include breakpoint-up(large) {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    &-socials {
+      margin-top: 1rem;
+      width: 60%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @include breakpoint-up(medium) {
+        margin-top: 0;
+      }
+      @include breakpoint-up(larger) {
+        width: 80%;
+      }
+      li {
+        a {
+          display: inline-block;
+          width: 36px;
+          height: 36px;
+          background: map-get($map: $colors, $key: bg);
+          border-radius: 50%;
+          line-height: 36px;
+          text-align: center;
+
+          img {
+            margin-top: 0.5rem;
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+}

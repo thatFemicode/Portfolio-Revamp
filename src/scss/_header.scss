@@ -1,10 +1,22 @@
 .header {
   &-nav {
-    padding: 1.6rem 0;
+    padding: 1.6rem 1.3rem;
   }
   &-img {
     width: 20px;
     height: 20px;
+  }
+  &-button {
+    a {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 1rem;
+      svg {
+        margin-right: 0.2rem;
+        width: 1rem;
+      }
+    }
   }
 }
 .inner {
