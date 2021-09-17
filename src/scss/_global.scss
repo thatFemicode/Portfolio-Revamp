@@ -3,6 +3,9 @@
   margin: 0 auto;
   position: relative;
   @include breakpoint-up(medium) {
+    max-width: 80%;
+  }
+  @include breakpoint-up(large) {
     max-width: 70%;
   }
 }
@@ -36,11 +39,11 @@
 
   &::after {
     content: '';
-    height: 3px;
+    height: 2px;
     width: 80px;
     position: absolute;
     top: 28px;
     left: 0;
-    border: 2px solid map-get($map: $colors, $key: text);
+    border: 1px solid map-get($map: $colors, $key: text);
   }
 }

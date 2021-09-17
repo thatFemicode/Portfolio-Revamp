@@ -8,6 +8,10 @@
     }
 
     &-left {
+      display: grid;
+      @include breakpoint-up(middle) {
+        grid-template-columns: 1fr 1fr;
+      }
       p {
         font-size: 0.8rem;
         line-height: 1.7;

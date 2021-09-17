@@ -1,0 +1,25 @@
+.contact {
+  &-main {
+    width: 100%;
+    margin: 0 auto;
+  }
+  &-section {
+    display: grid;
+    @include breakpoint-up(middle) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    &-details {
+      display: flex;
+      align-items: center;
+
+      &-name {
+        margin-left: 0.4rem;
+
+        @include breakpoint-up(large) {
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+}

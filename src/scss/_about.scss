@@ -22,6 +22,10 @@
     }
 
     &-left {
+      text-align: justify;
+      @include breakpoint-up(middle) {
+        width: 80%;
+      }
       &-btn {
         margin-top: 1rem;
       }

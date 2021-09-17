@@ -1,0 +1,30 @@
+.works {
+  display: grid;
+  text-align: justify;
+  @include breakpoint-up(large) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &-text {
+    margin-bottom: 1.4rem;
+    &-p {
+      margin-bottom: 1rem;
+    }
+  }
+  &-portfolio {
+    &-project {
+      margin-bottom: 1rem;
+      position: relative;
+
+      &-name {
+        font-size: 1.4rem;
+      }
+      &-description {
+        font-size: 0.9rem;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+      }
+      //   margin-bottom: 1px solid map-get($map: $colors, $key: text);
+    }
+  }
+}

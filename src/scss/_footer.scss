@@ -1,0 +1,14 @@
+.footer {
+  @include dc(map-get($map: $colors, $key: text));
+  text-align: center;
+
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+      margin-left: 1rem;
+    }
+  }
+}
