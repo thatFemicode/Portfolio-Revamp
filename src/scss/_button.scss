@@ -1,0 +1,8 @@
+.btn {
+  @include dc(map-get($map: $colors, $key: text));
+  // @include dc(rgba(255, 255, 255, 0.72));
+  border-radius: 3px;
+  padding: 0.6rem 1rem;
+  border: none;
+  outline: none;
+}

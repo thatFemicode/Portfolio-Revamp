@@ -29,3 +29,18 @@
 .email {
   margin-left: -0.34rem;
 }
+.section-heading {
+  position: relative;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+
+  &::after {
+    content: '';
+    height: 3px;
+    width: 80px;
+    position: absolute;
+    top: 28px;
+    left: 0;
+    border: 2px solid map-get($map: $colors, $key: text);
+  }
+}

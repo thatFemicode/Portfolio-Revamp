@@ -36,7 +36,7 @@
         color: map-get($map: $colors, $key: bg);
         font-size: 0.8rem;
         @include breakpoint-up(large) {
-          font-size: 1rem;
+          font-size: 0.8rem;
         }
       }
     }
