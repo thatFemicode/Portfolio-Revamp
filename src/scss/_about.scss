@@ -23,6 +23,7 @@
 
     &-left {
       text-align: justify;
+      line-height: 1.6;
       @include breakpoint-up(middle) {
         width: 80%;
       }
